@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+     <title>Hello, world!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .box{
+            width:100%;
+            height:70vh;
+           
+            
+        }
+        .top{
+            width:100%;
+            height:10vh;
+            background-color: black;
+            position: fixed;
+            z-index: 99;
+        }
+        .top h6{
+            padding-top: 5px;
+        }
+        .top h6 , .top a{
+            color: crimson;
+        }
+        nav{
+            margin-left: 340px;
+            margin-top:-30px;
+        }
+        ul li{
+            float:left;
+            padding-left: 15px;
+            list-style: none; 
+        }
+        a:hover{
+            text-decoration: none;
+            color: white;
+        }
+        .box .image{
+            background: rgb(255, 255, 255);
+        }
+        .image img{
+            border-radius: 50%;
+            margin-left:300px;
+            margin-top: 70px;
+        }
+        .image p{
+            margin-left: 200px;
+            font-size:10px;
+        }
+        .image button{
+            margin-left:300px;   
+        }
+        
+        .about img{
+            border-radius: 50%;
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+        
+        .about{
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Screenshot (125).png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-top: 40px;
+        }
+        .about h6{
+            color:crimson;
+        }
+        .about p{
+            color: crimson;
+            margin-left:300px;
+            margin-top:-150px;
+            position: absolute;
+            font-size:12px;
+            padding-right: 50px
+        }
+        .about button{
+            background-color: crimson;
+            color:white;
+            margin-left:300px;
+            margin-top: -100px;
+        }
+        .service{
+            background-color: white;
+            color: black;
+          
+            height:95vh;
+            padding-top: 20px;
+            
+        }
+        .service p{
+            font-size:8px;
+            margin-left: 200px;
+            padding-top: 30px;
+            padding-right: 170px;
+        }
+        .cad{
+            width:180px;
+            height:150px;
+            font-size:12px;
+            padding-left: 10px;
+        }
+        .cad1{
+            width:180px;
+            height:150px;
+            font-size:12px;
+            margin-left: 200px;
+            margin-top: -150px;
+        }
+        .cad2{
+            width: 180px;
+            height:150px;
+            font-size:12px;
+            margin-left: 400px;
+            margin-top: -150px;
+        }
+        .cad3{
+             width: 180px;
+            height:150px;
+            font-size:12px;
+            margin-left: 600px;
+            margin-top: -150px;
+        }
+        .team{
+            width:100%;
+            height:90vh;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding-top:60px;
+        }
+        .team p{
+            font-size:10px;
+            margin-left:180px;
+            padding-right: 200px;
+            color:white;
+        }
+        .one{
+        padding-left: 150px;
+            width:460px;
+           
+        }
+        .one img{
+            border-radius: 50%;
+        }
+        .one h6, .one p1{
+            color:crimson;
+            font-size:13px;
+        }
+        .one p{
+            margin-left: 0px;
+            font-size:8px;
+            color:white;
+        }
+         .two{
+             margin-left: 275px;
+            width:320px;
+             margin-top: -215px;
+           
+        }
+        .two img{
+            border-radius: 50%;
+        }
+        .two h6, .two p1{
+            color:crimson;
+            font-size:13px;
+        }
+        .two p{
+            margin-left: 0px;
+            font-size:8px;
+            color:white;
+        }
+        .three{
+             margin-left: 400px;
+            width:320px;
+             margin-top: -217px;
+           
+        }
+        .three img{
+            border-radius: 50%;
+        }
+        .three h6, .three p1{
+            color:crimson;
+            font-size:13px;
+        }
+        .three p{
+            margin-left: 0px;
+            font-size:8px;
+            color: white;
+        }
+        .four{
+             margin-left: 530px;
+            width:320px;
+             margin-top: -215px;
+           
+        }
+        .four img{
+            border-radius: 50%;
+        }
+        .four h6, .four p1{
+            color:crimson;
+            font-size:13px;
+        }
+        .four p{
+            margin-left: 0px;
+            font-size:8px;
+            color:white;
+        }
+        .skill{
+            width:100%;
+            height:60vh;
+            padding-top: 0px;
+            background-color: aliceblue;
+        }
+        .skill h4{
+            font-weight: bold;
+          
+           border-bottom: 2px solid gray;
+            margin-left: 280px;
+            margin-right: 400px;
+        }
+        .contuct{
+            width:100%;
+            height:80vh;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding-top: 10px;
+            color: crimson;
+        }
+        .contuct table{
+            margin-left:40px;
+            margin-top: 80px;
+        }
+        .contuct table td{
+            padding-top: 20px;
+        }
+        .contuct table button{
+            color: crimson;
+            background-color: black;
+            border:1px solid black;
+        }
+        .contuct table input{
+            border-radius:25px;
+            height:40px;
+            border:none;
+            outline:none;
+            border:1px solid crimson;
+            padding-left: 10px;
+           color:crimson;
+        }
+        .contuct table input:focus{
+            border:2px solid crimson.
+        }
+        .contuct .right table{
+            margin-left:500px;
+            margin-top:-200px;
+        }
+      </style>
+    </head>
+       <body>
+       <div class="box">
+          <div class="top">
+           <h6><b>Rukhsana</b></h6>
+           <nav>
+               <ul>
+                   <li><a href="#home">Home</a></li>
+                   <li><a href="#about">About</a></li>
+                   <li><a href="#service">Services</a></li>
+                   <li><a href="#team">Team</a></li>
+                   <li><a href="#skill">Skill</a></li>
+                   <li><a href="#contuct">Contuct</a></li>
+               </ul>
+           </nav>
+           </div>
+           <div class="image" id="home">
+          <img src="pic1.jpg" width="100px" height="100px">
+               <p><b>I am Rukhsna Khatun. I am a web designer. I am very like to design a web page.</b></p>
+          <button class="btn btn-dark h-auto">Hire Me</button>
+           </div>
+       </div>
+       <div class="about w-100 h-25" id="about">
+           <img src="received_998620250490317.jpeg" width="100px" height="150px">
+           <h6 class=" pl-4"><b>Rukhsana Khatun</b></h6>
+           <p>I am Rukhsana Khatun . I am a student of computer Science and Technology. I learned web design . I am very skilled at web design. I am making many projects. I make a web page on E-commerce.</p>
+           <button class="btn">Download CV</button>
+       </div>
+       <div class="service w-100" id="service">
+           <p>As a web designer , I made many projects using html, css, javascript. I am also learning PHP. I make some project with php. I show you some projects of making me.</p>
+           <div class="cad">
+               <div class="card ">
+                   <div class="card-header">
+                       Template
+                   </div>
+                   <div class="card-body">
+                       I make differents type of web template like personal, commercial, political, travouls and others. I you want to make any web template , please hire me kindely.
+                   </div>
+               </div>
+           </div>
+        <div class="cad1">
+            <div class="card">
+               <div class="card-header">CLOCK</div>
+                <div class="card-body">
+                    I make analog and digital clock. If you want to make a analog or digital clock using Javasecript, i will make you. So kindely help me .
+                </div>
+            </div>
+        </div>
+        <div class="cad2">
+            <div class="card">
+                <div class="card-header">
+                    Calculator
+                </div>
+                <div class="card-body">
+                    I make beutiful calculatoe using html, css, javascript. You can hire me to make calculator.                                        ....
+                </div>
+            </div>
+        </div>
+        <div class="cad3">
+            <div class="card">
+                <div class="card-header">Portofolio</div>
+                <div class="card-body">
+                I make a  responsive web design, so you can use the website in any device frequently. So to make a responsive web page , kindely hire me. 
+                </div>
+            </div>
+        </div>
+       </div>
+       <div class="team" id="team">
+           <p>I am working with people . They are very skilled in wev page. I describe their detils <span style="margin-left: 170px">below</span>.</p>
+           <div class="one">
+               <img src="circle1.png" width="100px" height="100px">
+               <h6>CHANEL IMAN</h6>
+                <p1>CEO of Pinterest</p1>
+                <p>Nullam dapibus bladit orci, viverra 
+                gravida dui loborits eget. Maecenans fringgila urna eu nisl scelerte.</p>
+           </div>
+           <div class="two">
+               <img src="circle2.png" width="80px" hight="100px">
+               <h6>ADRIANA LIMA</h6>
+               <p1>Fouder of Instagram</p1>
+               <p>Nullam dapibus bladit orci, viverra 
+                gravida dui loborits eget. Maecenans fringgila urna eu nisl scelerte.</p>
+           </div>
+           <div class="three">
+               <img src="circle 3.png" width="80px" hight="100px">
+               <h6>ADRIANA LIMA</h6>
+               <p1>Fouder of Instagram</p1>
+               <p>Nullam dapibus bladit orci, viverra 
+                gravida dui loborits eget. Maecenans fringgila urna eu nisl scelerte.</p>
+           </div>
+           <div class="four">
+               <img src="circle%204.png" width="80px" hight="100px">
+               <h6>ADRIANA LIMA</h6>
+               <p1>Fouder of Instagram</p1>
+               <p>Nullam dapibus bladit orci, viverra 
+                gravida dui loborits eget. Maecenans fringgila urna eu nisl scelerte.</p>
+           </div>
+       </div>
+       <div class="skill" id="skill">
+           <h4 style="padding-top: 40px;">My Skill</h4>
+          <table style="margin-left: 200px; margin-top: 30px;">
+              <tr>
+                  <td>HTML</td>
+                  <td>
+                     <div class="progress" style=" width:350px">
+                       <div class="progress-bar progress-bar-striped" style="width:99%;">99%</div>
+            </div> 
+                  </td>
+              </tr>
+              <tr>
+                  <td style="margin-left:200px">CSS</td>
+                  <td>
+                     <div class="progress" style=" width:350px">
+                       <div class="progress-bar progress-bar-striped" style="width:95%;">95%</div>
+            </div> 
+                  </td>
+              </tr>
+              <tr>
+                  <td style="margin-left:200px">BOOTSTRAP</td>
+                  <td>
+                     <div class="progress" style=" width:350px">
+                       <div class="progress-bar progress-bar-striped" style="width:95%;">85%</div>
+            </div> 
+                  </td>
+              </tr>
+              <tr>
+                  <td style="margin-left:200px">JAVASCRIPT</td>
+                  <td>
+                     <div class="progress" style=" width:350px">
+                       <div class="progress-bar progress-bar-striped" style="width:95%;">80%</div>
+            </div> 
+                  </td>
+              </tr>
+          </table>
+           
+       </div>
+       <div class="contuct" id="contuct">
+           <div class="left">
+               <table>
+                   <tr>
+                       <td>Enter your mail</td>
+                       <td><input type="text" ></td>
+                   </tr> 
+                   <tr>
+                       <td>Enter your password</td>
+                       <td><input type="password"></td>
+                   </tr>
+                   <tr>
+                       <td></td>
+                       <td><button class="btn">Submit</button></td>
+                   </tr>
+               </table>
+           </div>
+           <div class="right">
+               <table>
+                   <tr>
+                       <td>Mobile No : </td>
+                       <td>014XXXXXXXX</td>
+                   </tr>
+                   <tr>
+                       <td>
+                           Mobile No.
+                       </td>
+                       <td>013XXXXXXXX</td>
+                   </tr>
+                   <tr>
+                       <td>Email : </td>
+                       <td>rukhsana@gmail.com</td>
+                   </tr>
+                   <tr>
+                       <td>Email : </td>
+                       <td>190148.cse@just.edu.bd</td>
+                   </tr>
+               </table>
+           </div>
+       </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.3/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    </body>
+</html>
